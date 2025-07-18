@@ -1,0 +1,393 @@
+{
+  "navbar": {
+    "logo": "AgriWaste2Fuel",
+    "home": "Home",
+    "analysis": "Analysis",
+    "about": "About",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "language": "Language"
+  },
+  "home": {
+    "hackathonBadge": " Annam.ai Hackathon Project - Team 3A",
+    "title": "AgriWaste2Fuel",
+    "subtitle": "Smart Farm Waste Tracker",
+    "description": "AI-powered platform to detect farm waste, guide conversion to biogas/compost, and track GHG savings with carbon credit estimation for Indian farmers.",
+    "startAnalysis": "Start Analysis",
+    "documentation": "Documentation",
+    "modules": {
+      "title": "Smart Platform Modules",
+      "subtitle": "Complete solution from waste detection to carbon credit earning for farmers",
+      "wasteDetection": {
+        "title": "Waste Detection & Classification",
+        "description": "Upload images of agricultural waste or manually enter waste type to get accurate identification and conversion recommendations",
+        "moduleLabel": "Module 1"
+      },
+      "biogasRecommendation": {
+        "title": "Biogas/Compost Recommendation",
+        "description": "Smart decision engine recommends biogas for wet waste or composting for dry waste with step-by-step processing guide",
+        "moduleLabel": "Module 2"
+      },
+      "carbonCredits": {
+        "title": "GHG Savings & Carbon Credits",
+        "description": "Calculate CO₂ emission savings from waste conversion and estimate potential carbon credit earnings for farmers",
+        "moduleLabel": "Module 3 & 4"
+      }
+    },
+    "projectStatus": {
+      "title": "Project Development Status",
+      "subtitle": "Currently under development for Annam.ai Hackathon",
+      "version": {
+        "label": "V1.0",
+        "title": "Current Version",
+        "status": "In Development"
+      },
+      "coreModules": {
+        "label": "4",
+        "title": "Core Modules",
+        "status": "Planned Features"
+      },
+      "testingPhase": {
+        "label": "Beta",
+        "title": "Testing Phase",
+        "status": "Hackathon Demo"
+      },
+      "openSource": {
+        "label": "Open",
+        "title": "Source Project",
+        "status": "GitHub Available"
+      }
+    },
+    "cta": {
+      "badge": "Hackathon Project Demo",
+      "title": "Help Farmers Convert",
+      "titleSecond": "Waste to Fuel",
+      "description": "A solution built for Annam.ai Hackathon to address real agricultural waste problems in India",
+      "tryDemo": "Try Demo",
+      "aboutProject": "About Project",
+      "features": {
+        "openSource": {
+          "title": "Open Source",
+          "description": "Available on GitHub"
+        },
+        "team": {
+          "title": "Team 3A",
+          "description": "Annam.ai Hackathon"
+        },
+        "forFarmers": {
+          "title": "For Farmers",
+          "description": "Real Problem Solving"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About AgriWaste2Fuel",
+    "subtitle": "Transforming Agricultural Waste into Sustainable Energy Solutions through AI Innovation",
+    "badge": "🚀 Innovative AgriTech Solution",
+    "mission": {
+      "title": "Mission",
+      "description1": "AgriWaste2Fuel is an innovative sustainability platform designed to revolutionize agricultural waste management. Our AI-powered system analyzes agricultural waste through advanced image recognition and natural language processing to provide optimal disposal recommendations.",
+      "description2": "We bridge the gap between traditional farming practices and modern sustainability solutions, empowering farmers to turn their waste into valuable resources while contributing to environmental conservation."
+    },
+    "vision": {
+      "title": "Vision",
+      "description1": "To create a world where agricultural waste becomes a valuable resource rather than an environmental burden. We envision farmers equipped with cutting-edge technology to make informed decisions about waste management.",
+      "description2": "Our goal is to contribute to the global fight against climate change by promoting sustainable agricultural practices and helping farmers monetize their waste through carbon credit systems."
+    },
+    "achievements": {
+      "wasteTypes": "Waste Types Identified",
+      "co2Saved": "Tons CO₂ Saved", 
+      "accuracy": "Accuracy Rate",
+      "availability": "AI Availability",
+      "coreModules": "Core Modules",
+      "languagesSupported": "Languages Supported",
+      "teamMembers": "Team Members",
+      "ecoFriendly": "Eco-Friendly"
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "description": "A passionate group of developers, engineers, and innovators working together to make agriculture more sustainable."
+    }
+  },
+  "input": {
+    "badge": "AI-Powered Waste Analysis",
+    "title": "Analyze",
+    "titleHighlight": "Agricultural",
+    "titleSuffix": "Waste",
+    "description": "Upload an image or describe your agricultural waste to get AI-powered recommendations for sustainable processing and carbon credit calculations",
+    "tabs": {
+      "image": {
+        "title": "Upload Image",
+        "subtitle": "AI-powered image recognition"
+      },
+      "text": {
+        "title": "Describe Waste",
+        "subtitle": "Natural language processing"
+      }
+    },
+    "uploadImage": "Upload Image",
+    "textInput": "Enter Text",
+    "analyze": "Analyze",
+    "placeholder": "Describe your agricultural waste in detail...",
+    "dragDrop": "Drag and drop an image here, or click to select",
+    "supportedFormats": "Supported formats: JPG, PNG, GIF (max 10MB)",
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Input Your Waste",
+        "description": "Upload a clear image or describe your agricultural waste type"
+      },
+      "step2": {
+        "title": "AI Analysis",
+        "description": "Our AI identifies waste type and optimal processing methods"
+      },
+      "step3": {
+        "title": "Get Results",
+        "description": "Receive recommendations, carbon credits, and financial estimates"
+      }
+    },
+    "whatYouGet": {
+      "title": "What You'll Get",
+      "wasteTypeId": "Waste type identification",
+      "processingRec": "Processing recommendations",
+      "co2Savings": "CO₂ savings calculation",
+      "carbonCredits": "Carbon credits earned",
+      "financialValue": "Financial value estimate",
+      "certificate": "Downloadable certificate"
+    }
+  },
+  "result": {
+    "title": "Analysis Results",
+    "subtitle": "Comprehensive waste analysis using {{method}} technology",
+    "aiImageRecognition": "AI image recognition",
+    "naturalLanguageProcessing": "natural language processing",
+    "analysisComplete": "Analysis Complete",
+    "demoMode": "Demo Mode",
+    "confidenceScore": "Confidence Score",
+    "processingEfficiency": "Processing Efficiency",
+    "energyOutput": "Energy Output",
+    "processingTime": "Processing Time",
+    "quantityAnalyzed": "Quantity Analyzed",
+    "roiPotential": "ROI Potential",
+    "wasteClassification": "Waste Classification",
+    "identifiedWithAI": "Identified with AI analysis",
+    "processingMethod": "Processing Method",
+    "optimizedForWaste": "Optimized for your waste type",
+    "co2Reduction": "CO₂ Reduction",
+    "carbonFootprintPrevented": "Carbon footprint prevented",
+    "carbonCredits": "Carbon Credits",
+    "tradeableCarbonUnits": "Tradeable carbon units earned",
+    "economicValue": "Economic Value",
+    "estimatedMarketValue": "Estimated market value",
+    "verification": "Verification",
+    "demoModeStatus": "Demo Mode",
+    "aiVerified": "AI Verified",
+    "analysisValidationStatus": "Analysis validation status",
+    "environmentalBenefits": "Environmental Benefits",
+    "processingWorkflow": "Processing Workflow",
+    "environmentalImpactSummary": "Environmental Impact Summary",
+    "impactDescription": "By processing your {{wasteType}} through {{method}}, you contribute to sustainable waste management and help reduce environmental impact.",
+    "co2EmissionsPrevented": "CO₂ Emissions Prevented",
+    "carbonCreditsEarned": "Carbon Credits Earned",
+    "analysisSavedDate": "Analysis saved to your account on {{date}}",
+    "sustainabilityCertificate": "Sustainability Certificate",
+    "newAnalysis": "New Analysis",
+    "backToHome": "Back to Home",
+    "fallbackBenefits": {
+      "greenhouseGasReduction": {
+        "title": "Greenhouse Gas Reduction",
+        "description": "Prevents methane emissions from waste decomposition"
+      },
+      "renewableEnergyProduction": {
+        "title": "Renewable Energy Production", 
+        "description": "Generates clean, sustainable biogas energy"
+      },
+      "resourceRecovery": {
+        "title": "Resource Recovery",
+        "description": "Creates valuable organic fertilizer as byproduct"
+      },
+      "circularEconomy": {
+        "title": "Circular Economy",
+        "description": "Supports sustainable waste management practices"
+      }
+    },
+    "customProcessingSteps": "Detailed processing steps will be customized based on your specific waste type and selected method.",
+    "analyzingWaste": "Analyzing Your Waste",
+    "processingInput": "Our AI is processing your {{method}}...",
+    "image": "image",
+    "textInput": "text input",
+    "identifyingWaste": "Identifying waste type",
+    "calculatingRecommendations": "Calculating recommendations",
+    "computingCarbon": "Computing carbon savings",
+    "savingResults": "Saving results to your account...",
+    "analysisFailed": "Analysis Failed",
+    "retryAnalysis": "Retry Analysis",
+    "startNewAnalysis": "Start New Analysis",
+    "noDataFound": "No Analysis Data Found",
+    "startNewAnalysisMessage": "Please start a new analysis to see results.",
+    "recommendations": "Recommendations",
+    "energyPotential": "Energy Potential",
+    "environmentalImpact": "Environmental Impact",
+    "downloadCertificate": "Download Certificate"
+  },
+  "login": {
+    "title": "Farmer Login",
+    "subtitle": "Welcome back to your account",
+    "email": "Email Address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot Password?",
+    "loginButton": "Sign In",
+    "noAccount": "Don't have an account?",
+    "register": "Sign up here",
+    "orDivider": "Or continue with",
+    "googleLogin": "Continue with Google",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Email is invalid",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "registerButton": "Register",
+    "haveAccount": "Already have an account?",
+    "login": "Login"
+  },
+  "textInput": {
+    "title": "Describe Your Waste",
+    "subtitle": "Enter the type of agricultural waste you want to process",
+    "wasteTypeLabel": "Waste Type",
+    "placeholder": "e.g., Rice straw, Wheat stubble, Corn husks...",
+    "quickSelect": "Quick Select",
+    "proTip": "Pro Tip",
+    "proTipDescription": "Be as specific as possible. Include details like \"Rice straw from harvested paddy\" or \"Dry corn husks from sweet corn\" for better analysis results.",
+    "enterWasteType": "Please enter a waste type",
+    "processing": "Processing Waste Type...",
+    "analyzeWaste": "Analyze Waste",
+    "categories": {
+      "riceStraw": "Rice Straw",
+      "riceStrawDesc": "Post-harvest rice residue",
+      "wheatStubble": "Wheat Stubble", 
+      "wheatStubbleDesc": "Wheat crop residue",
+      "cornHusks": "Corn Husks",
+      "cornHusksDesc": "Corn cob coverings",
+      "sugarcaneBagasse": "Sugarcane Bagasse",
+      "sugarcaneBagasseDesc": "Sugarcane pulp residue",
+      "cottonStalks": "Cotton Stalks",
+      "cottonStalksDesc": "Cotton plant stems",
+      "bananaLeaves": "Banana Leaves",
+      "bananaLeavesDesc": "Large banana plant leaves"
+    }
+  },
+  "aboutPage": {
+    "projectDescription": "AgriWaste2Fuel is an innovative sustainability platform designed to revolutionize agricultural waste management. Our AI-powered system analyzes agricultural waste through advanced image recognition and natural language processing to provide optimal disposal recommendations.",
+    "empowerFarmers": "We empower farmers to make data-driven decisions that benefit both their economics and the environment, creating a sustainable future for agriculture.",
+    "impactTitle": "Impact",
+    "impactDescription1": "Our platform calculates precise environmental impact metrics, including CO₂ savings and carbon credits earned, while providing accurate monetary estimates for sustainable waste processing methods.",
+    "impactDescription2": "Users receive verifiable certificates documenting their contribution to environmental sustainability, creating a transparent and rewarding ecosystem for green practices.",
+    "keyFeatures": "🚀 Key Features",
+    "aiImageRecognition": "AI Image Recognition",
+    "aiImageRecognitionDesc": "Advanced computer vision for accurate waste identification",
+    "smartRecommendations": "Smart Recommendations", 
+    "smartRecommendationsDesc": "Optimized processing methods for maximum efficiency",
+    "environmentalImpact": "Environmental Impact",
+    "environmentalImpactDesc": "Precise CO₂ calculations and sustainability metrics",
+    "carbonCredits": "Carbon Credits",
+    "carbonCreditsDesc": "Earn verified credits with accurate financial estimates",
+    "meetOurTeam": "👥 Meet Our Team",
+    "technologyStack": "🛠️ Technology Stack",
+    "hackathonTitle": "🏆 Hackathon Project 2025",
+    "hackathonDescription": "Developed for the Sustainable Agriculture Technology Hackathon 2025, focusing on innovative AI-driven solutions for environmental challenges in modern farming.",
+    "eventDetails": "Event Details",
+    "event": "Event",
+    "theme": "Theme", 
+    "duration": "Duration",
+    "participants": "Participants",
+    "projectFocus": "Project Focus",
+    "projectMentor": "Project Mentor",
+    "frontendTechnologies": "Frontend Technologies",
+    "backendAI": "Backend & AI/ML",
+    "databaseStorage": "Database & Storage",
+    "developmentTools": "Development Tools",
+    "readyToTransform": "Ready to Transform Your Agricultural Waste?",
+    "joinFarmers": "Join thousands of farmers who are already converting their agricultural waste into sustainable energy and earning carbon credits.",
+    "startAnalysis": "Start Analysis",
+    "createAccount": "Create Account",
+    "tags": {
+      "innovation": "Innovation",
+      "sustainability": "Sustainability", 
+      "ai/ml": "AI/ML",
+      "agriculture": "Agriculture",
+      "environment": "Environment",
+      "technology": "Technology"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 AgriWaste2Fuel. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "close": "Close"
+  },
+  "dashboard": {
+    "title": "Farmer Dashboard",
+    "welcome": "Welcome, {{name}}!",
+    "logout": "Logout",
+    "loadingDashboard": "Loading Dashboard...",
+    "welcomeMessage": "Welcome! 🌾",
+    "welcomeDescription": "Welcome to AgriWaste2Fuel. Here you can analyze your agricultural waste.",
+    "startNewAnalysis": "Start New Analysis",
+    "viewPreviousAnalyses": "View Previous Analyses",
+    "stats": {
+      "totalAnalyses": "Total Analyses",
+      "co2Saved": "CO₂ Saved",
+      "carbonCredits": "Carbon Credits",
+      "totalEarnings": "Total Earnings"
+    },
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "analysisHistory": "Analysis History",
+    "environmentalImpact": "Environmental Impact",
+    "noRecentActivity": "No recent activity found. Start your first analysis to see results here.",
+    "viewAll": "View All",
+    "tons": "tons",
+    "credits": "credits",
+    "rupees": "₹",
+    "estimatedEarnings": "Estimated Earnings",
+    "activities": {
+      "riceStrawComplete": "Rice Straw - Analysis Complete",
+      "hoursAgo": "{{hours}} hours ago",
+      "certificateDownloaded": "Certificate Downloaded",
+      "wheatStrawBiogas": "Wheat Straw - Biogas Suggestion",
+      "dayAgo": "{{days}} day ago"
+    },
+    "suggestions": "Suggestions",
+    "biogasProduction": {
+      "title": "🌱 Biogas Production", 
+      "description": "You can save up to ₹8,000 per month by making biogas from your rice straw."
+    },
+    "compostFertilizer": {
+      "title": "♻️ Compost Fertilizer",
+      "description": "Improve soil quality and increase production by making organic fertilizer."
+    },
+    "carbonCredits": {
+      "title": "🏆 Carbon Credits",
+      "description": "Earn carbon credits from your environment-friendly methods."
+    }
+  }
+}
