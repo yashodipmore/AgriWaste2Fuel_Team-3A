@@ -84,17 +84,17 @@ const About = () => {
     { value: "95%", key: "accuracy" },
     { value: "4", key: "coreModules" },
     { value: "3", key: "languagesSupported" },
-    { value: "5", key: "teamMembers" },
     { value: "24/7", key: "availability" },
     { value: "100%", key: "ecoFriendly" }
   ];
 
   const hackathonInfo = {
-    name: "Anan.ai Hackathon 2025",
+    name: "Annam.ai Internship Program",
+    organization: "Annam.ai IIT Ropar",
     theme: "Sustainable Agriculture Technology",
     focus: "AI-driven solutions for environmental challenges",
-    duration: "48 hours",
-    participants: "100+ teams nationwide"
+    duration: "2 Month Internship",
+    type: "Project-based Learning Program"
   };
 
   return (
@@ -132,27 +132,28 @@ const About = () => {
               ))}
             </div>
 
-            {/* Hackathon Information */}
+            {/* Program Information */}
             <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl p-8 text-center text-white mb-16">
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8">
-                <h2 className="text-3xl font-bold mb-4">{t('aboutPage.hackathonTitle')}</h2>
+                <h2 className="text-3xl font-bold mb-4">Internship Program</h2>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">{t('aboutPage.eventDetails')}</h3>
+                    <h3 className="text-xl font-semibold mb-3">Program Details</h3>
                     <div className="space-y-2">
-                      <p><span className="font-medium">{t('aboutPage.event')}:</span> {hackathonInfo.name}</p>
-                      <p><span className="font-medium">{t('aboutPage.theme')}:</span> {hackathonInfo.theme}</p>
-                      <p><span className="font-medium">{t('aboutPage.duration')}:</span> {hackathonInfo.duration}</p>
-                      <p><span className="font-medium">{t('aboutPage.participants')}:</span> {hackathonInfo.participants}</p>
+                      <p><span className="font-medium">Program:</span> {hackathonInfo.name}</p>
+                      <p><span className="font-medium">Organization:</span> {hackathonInfo.organization}</p>
+                      <p><span className="font-medium">Theme:</span> {hackathonInfo.theme}</p>
+                      <p><span className="font-medium">Duration:</span> {hackathonInfo.duration}</p>
+                      <p><span className="font-medium">Type:</span> {hackathonInfo.type}</p>
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">{t('aboutPage.projectFocus')}</h3>
+                    <h3 className="text-xl font-semibold mb-3">Project Focus</h3>
                     <p className="mb-4">{hackathonInfo.focus}</p>
                     <div className="flex flex-wrap gap-2">
                       {['Innovation', 'Sustainability', 'AI/ML', 'Agriculture', 'Environment', 'Technology'].map((tag, index) => (
                         <span key={index} className="bg-white/30 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
-                          {t(`aboutPage.tags.${tag.toLowerCase()}`)}
+                          {tag}
                         </span>
                       ))}
                     </div>

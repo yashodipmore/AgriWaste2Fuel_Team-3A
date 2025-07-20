@@ -1,0 +1,264 @@
+# TrueFoundry Deployment Configuration for AgriWaste2Fuel - Team 3A
+# Annam.ai Internship Program 2025
+
+apiVersion: truefoundry.com/v1alpha1
+kind: Application
+metadata:
+  name: agriwaste2fuel-team3a
+  labels:
+    project: annam-ai-internship
+    team: team-3a
+    environment: production
+
+spec:
+  # Application Configuration
+  application:
+    name: agriwaste2fuel
+    description: "AI-powered agricultural waste to fuel conversion platform by Team 3A"
+    
+  # Services Configuration
+  services:
+    # Backend API Service
+    - name: api-service
+      type: service
+      image:
+        build:
+          context: ./backend
+          dockerfile: Dockerfile
+      ports:
+        - containerPort: 8000
+          servicePort: 8000
+      environment:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: database-secrets
+              key: url
+        - name: FIREBASE_CONFIG
+          valueFrom:
+            secretKeyRef:
+              name: firebase-secrets
+              key: config
+      resources:
+        requests:
+          memory: "512Mi"
+          cpu: "500m"
+        limits:
+          memory: "1Gi"
+          cpu: "1000m"
+      replicas: 2
+      autoscaling:
+        enabled: true
+        minReplicas: 1
+        maxReplicas: 5
+        targetCPUUtilizationPercentage: 70
+
+    # ML Model Service
+    - name: ml-service
+      type: model
+      image:
+        build:
+          context: ./ml-models
+          dockerfile: Dockerfile
+      ports:
+        - containerPort: 5000
+          servicePort: 5000
+      environment:
+        - name: MODEL_PATH
+          value: "/models/waste-classifier"
+        - name: BATCH_SIZE
+          value: "32"
+      resources:
+        requests:
+          memory: "2Gi"
+          cpu: "1000m"
+          nvidia.com/gpu: 1
+        limits:
+          memory: "4Gi"
+          cpu: "2000m"
+          nvidia.com/gpu: 1
+      replicas: 1
+      autoscaling:
+        enabled: true
+        minReplicas: 1
+        maxReplicas: 3
+        targetCPUUtilizationPercentage: 80
+
+    # Frontend Service (Optional - can be deployed on Vercel)
+    - name: frontend-service
+      type: service
+      image:
+        build:
+          context: ./frontend
+          dockerfile: Dockerfile.prod
+      ports:
+        - containerPort: 3000
+          servicePort: 3000
+      environment:
+        - name: REACT_APP_API_URL
+          value: "https://api-service-agriwaste2fuel-team3a.truefoundry.app"
+        - name: NODE_ENV
+          value: "production"
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+      replicas: 2
+
+  # Database Configuration
+  databases:
+    - name: agriwaste-postgres
+      type: postgresql
+      version: "14"
+      storage: "10Gi"
+      resources:
+        requests:
+          memory: "1Gi"
+          cpu: "500m"
+        limits:
+          memory: "2Gi"
+          cpu: "1000m"
+
+  # Storage Configuration
+  storage:
+    - name: model-storage
+      type: persistent-volume
+      size: "50Gi"
+      accessMode: ReadWriteOnce
+      storageClass: fast-ssd
+    
+    - name: image-storage
+      type: object-storage
+      bucket: agriwaste2fuel-images
+      region: us-east-1
+
+  # Networking
+  networking:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: "nginx"
+        cert-manager.io/cluster-issuer: "letsencrypt-prod"
+      hosts:
+        - host: api.agriwaste2fuel-team3a.annam.ai
+          paths:
+            - path: /
+              service: api-service
+              port: 8000
+        - host: ml.agriwaste2fuel-team3a.annam.ai
+          paths:
+            - path: /
+              service: ml-service
+              port: 5000
+        - host: app.agriwaste2fuel-team3a.annam.ai
+          paths:
+            - path: /
+              service: frontend-service
+              port: 3000
+      tls:
+        - secretName: agriwaste2fuel-tls
+          hosts:
+            - api.agriwaste2fuel-team3a.annam.ai
+            - ml.agriwaste2fuel-team3a.annam.ai
+            - app.agriwaste2fuel-team3a.annam.ai
+
+  # Monitoring & Logging
+  monitoring:
+    enabled: true
+    prometheus:
+      enabled: true
+    grafana:
+      enabled: true
+    alerts:
+      - name: high-cpu-usage
+        condition: "cpu_usage > 80%"
+        action: scale_up
+      - name: high-memory-usage
+        condition: "memory_usage > 85%"
+        action: alert_team
+
+  # Security
+  security:
+    networkPolicies:
+      enabled: true
+    podSecurityPolicy:
+      enabled: true
+    secrets:
+      - name: database-secrets
+        type: Opaque
+        data:
+          url: <base64-encoded-database-url>
+      - name: firebase-secrets
+        type: Opaque
+        data:
+          config: <base64-encoded-firebase-config>
+      - name: api-keys
+        type: Opaque
+        data:
+          openai: <base64-encoded-openai-key>
+          aws: <base64-encoded-aws-credentials>
+
+  # CI/CD Pipeline
+  cicd:
+    enabled: true
+    triggers:
+      - branch: main
+        action: deploy
+        environment: production
+      - branch: develop
+        action: deploy
+        environment: staging
+    steps:
+      - name: build
+        action: docker_build
+      - name: test
+        action: run_tests
+      - name: security_scan
+        action: security_scan
+      - name: deploy
+        action: deploy_to_cluster
+
+# Development Environment
+---
+apiVersion: truefoundry.com/v1alpha1
+kind: Application
+metadata:
+  name: agriwaste2fuel-team3a-dev
+  labels:
+    project: annam-ai-internship
+    team: team-3a
+    environment: development
+
+spec:
+  application:
+    name: agriwaste2fuel-dev
+    description: "Development environment for AgriWaste2Fuel"
+    
+  services:
+    - name: api-service-dev
+      type: service
+      image:
+        build:
+          context: ./backend
+          dockerfile: Dockerfile.dev
+      ports:
+        - containerPort: 8000
+          servicePort: 8000
+      environment:
+        - name: ENVIRONMENT
+          value: "development"
+        - name: DEBUG
+          value: "true"
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+      replicas: 1

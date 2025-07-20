@@ -1,0 +1,22 @@
+{
+  "model": "yolov8n-cls.pt",
+  "dataset": "dataset_split",
+  "classes": 3,
+  "epochs": 50,
+  "final_metrics": {
+    "top1_accuracy": 0.987,
+    "top5_accuracy": 1.0
+  },
+  "validation_details": {
+    "image_count": 75,
+    "corrupt_images": 0,
+    "inference_speed_ms_per_image": 4.1,
+    "preprocess_speed_ms_per_image": 0.6,
+    "postprocess_speed_ms_per_image": 0.0
+  },
+  "weights": {
+    "best": "runs/classify/train/weights/best.pt",
+    "last": "runs/classify/train/weights/last.pt"
+  },
+  "logs_dir": "runs/classify/train"
+}

@@ -66,26 +66,26 @@ const Footer = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-emerald-400">Contact</h3>
+              <h3 className="text-lg font-semibold mb-4 text-emerald-400">Contact Team 3A</h3>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  contact@agritech.com
+                  yashodipmore2004@gmail.com
                 </li>
                 <li className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  Bangalore, India
+                  Team 3A - India
                 </li>
                 <li className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
-                  +91 9876543210
+                  Annam.ai Internship Program
                 </li>
               </ul>
             </div>
@@ -94,10 +94,10 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 AgriWaste2Fuel. Built with ❤️ for sustainable agriculture.
+              © 2025 AgriWaste2Fuel Team 3A. Developed by Group 3A under Annam.ai Internship Program.
             </div>
             <div className="flex items-center text-sm text-gray-400">
-              <span className="mr-2">Hackathon Project 2025</span>
+              <span className="mr-2">Annam.ai Internship Program 2025</span>
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
             </div>
           </div>

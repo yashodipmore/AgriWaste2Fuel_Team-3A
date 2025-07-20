@@ -9,7 +9,7 @@
     "language": "Language"
   },
   "home": {
-    "hackathonBadge": " Annam.ai Hackathon Project - Team 3A",
+    "hackathonBadge": " Annam.ai Internship Program - Team 3A",
     "title": "AgriWaste2Fuel",
     "subtitle": "Smart Farm Waste Tracker",
     "description": "AI-powered platform to detect farm waste, guide conversion to biogas/compost, and track GHG savings with carbon credit estimation for Indian farmers.",
@@ -36,7 +36,7 @@
     },
     "projectStatus": {
       "title": "Project Development Status",
-      "subtitle": "Currently under development for Annam.ai Hackathon",
+      "subtitle": "Currently under development for Annam.ai Internship Program",
       "version": {
         "label": "V1.0",
         "title": "Current Version",
@@ -50,7 +50,7 @@
       "testingPhase": {
         "label": "Beta",
         "title": "Testing Phase",
-        "status": "Hackathon Demo"
+        "status": "Internship Demo"
       },
       "openSource": {
         "label": "Open",
@@ -59,10 +59,10 @@
       }
     },
     "cta": {
-      "badge": "Hackathon Project Demo",
+      "badge": "Internship Program Demo",
       "title": "Help Farmers Convert",
       "titleSecond": "Waste to Fuel",
-      "description": "A solution built for Annam.ai Hackathon to address real agricultural waste problems in India",
+      "description": "A solution built during Annam.ai Internship Program to address real agricultural waste problems in India",
       "tryDemo": "Try Demo",
       "aboutProject": "About Project",
       "features": {
@@ -72,7 +72,7 @@
         },
         "team": {
           "title": "Team 3A",
-          "description": "Annam.ai Hackathon"
+          "description": "Annam.ai Internship Program"
         },
         "forFarmers": {
           "title": "For Farmers",
@@ -303,8 +303,8 @@
     "carbonCreditsDesc": "Earn verified credits with accurate financial estimates",
     "meetOurTeam": "👥 Meet Our Team",
     "technologyStack": "🛠️ Technology Stack",
-    "hackathonTitle": "🏆 Hackathon Project 2025",
-    "hackathonDescription": "Developed for the Sustainable Agriculture Technology Hackathon 2025, focusing on innovative AI-driven solutions for environmental challenges in modern farming.",
+    "hackathonTitle": "🏆 Internship Program 2025",
+    "hackathonDescription": "Developed for the Annam.ai Internship Program 2025, focusing on innovative AI-driven solutions for environmental challenges in modern farming.",
     "eventDetails": "Event Details",
     "event": "Event",
     "theme": "Theme", 

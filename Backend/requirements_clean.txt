@@ -1,0 +1,32 @@
+# Core FastAPI dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Firebase Authentication
+firebase-admin==6.2.0
+
+# Image Processing & ML
+Pillow==10.1.0
+ultralytics==8.0.196
+torch==2.1.1
+torchvision==0.16.1
+numpy==1.24.3
+opencv-python-headless==4.8.1.78
+
+# PDF Generation
+reportlab==4.0.7
+
+# File handling
+aiofiles==23.2.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# HTTP requests
+requests==2.31.0
+
+# Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4

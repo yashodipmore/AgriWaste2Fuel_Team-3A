@@ -25,13 +25,13 @@ CERTIFICATE_TEMPLATES = {
     "biogas": {
         "title": "Carbon Credit Certificate - Biogas Production",
         "description": "This certificate validates the carbon credits earned through biogas production from agricultural waste",
-        "verification_authority": "AgriWaste2Fuel Platform",
+        "verification_authority": "AgriWaste2Fuel Platform - Team 3A",
         "standard": "Verified Carbon Standard (VCS)"
     },
     "compost": {
         "title": "Carbon Credit Certificate - Organic Composting", 
         "description": "This certificate validates the carbon credits earned through organic composting of agricultural waste",
-        "verification_authority": "AgriWaste2Fuel Platform",
+        "verification_authority": "AgriWaste2Fuel Platform - Team 3A",
         "standard": "Gold Standard for Global Goals"
     }
 }
@@ -147,6 +147,7 @@ def generate_mock_pdf_content(cert_data: Dict[str, Any]) -> str:
     
     <div class="footer">
         <p>This certificate is digitally generated and verified by the AgriWaste2Fuel Platform.</p>
+        <p>Developed by Team 3A under Annam.ai Hackathon 2025</p>
         <p>For verification, visit our platform with code: {cert_data['verification_code']}</p>
         <p>{cert_data['template']['description']}</p>
     </div>
@@ -209,7 +210,7 @@ async def generate_certificate(request: CertificateRequest):
             content=pdf_content,
             media_type="application/pdf",
             headers={
-                "Content-Disposition": f"attachment; filename=AgriWaste2Fuel_Certificate_{cert_id}.pdf"
+                "Content-Disposition": f"attachment; filename=AgriWaste2Fuel_Team3A_Certificate_{cert_id}.pdf"
             }
         )
         
